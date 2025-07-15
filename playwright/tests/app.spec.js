@@ -4,7 +4,7 @@ const { test, expect } = require("@playwright/test");
 
 // Base URL for the running React application.
 // Before running tests, ensure the React app is started (e.g., `npm start`).
-const APP_URL = "http://localhost:3000";
+const APP_URL = "https://playwright-waits-and-timeouts.vercel.app/";
 
 // Test suite for the entire application.
 test.describe("React Test App", () => {
