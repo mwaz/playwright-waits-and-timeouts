@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Playwright Test API
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![CircleCI](https://circleci.com/gh/mwaz/playwright-waits-and-timeouts.svg?style=svg)](https://circleci.com/gh/mwaz/playwright-waits-and-timeouts)
 
-## Available Scripts
+<p align="center"><img src="https://avatars3.githubusercontent.com/u/59034516"></p>
 
-In the project directory, you can run:
+This project is a simple React application with playwright tests created from the `create react app` bootstrap project. It is designed to be a testing frontend and test repository for the "Mastering Waits and Timeouts in Playwright" tutorial for CircleCI.
 
-### `npm start`
+It provides basic user behaviout for a simulated login, fetching products, adding items to carts and also basic navigation.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js (v16 or later)
 
-### `npm test`
+- npm (usually comes with Node.js)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+Clone the repository for this project using the commands below
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+git clone git@github.com:mwaz/playwright-waits-and-timeouts.git
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Navigate to the project directory in your terminal.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+cd playwright-waits-and-timeouts;
+```
 
-### `npm run eject`
+Install the required dependencies for the application by running:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Install the required dependencies for the test repository by running:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+cd playwright;
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Running the Application
+To start the application, run the following command from the project's root directory:
 
-## Learn More
+```bash
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Running Playwright tests
+To start the API server, run the following command from the project's root directory:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+cd playwright;
+npm test
+```
 
-### Code Splitting
+> **Info:** The API server is also hosted on Vercel at [https://playwright-waits-and-timeouts.vercel.app/](https://playwright-waits-and-timeouts.vercel.app/), which makes it easier to run the tests on CircleCI.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Details
 
-### Analyzing the Bundle Size
+This repo is built following a tutorial published on CircleCI blog under the CircleCI Guest Writer Program.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Blog post: [Mastering Waits and Timeouts in Playwright][blog]
+- Author's GitHub profile: [Waweru Mwaura][author]
 
-### Making a Progressive Web App
+### About CircleCI Guest Writer Program
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Join a team of freelance writers and write about your favorite technology topics for the CircleCI blog. Read more about the program [here][gwp-program].
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[blog]: https://circleci.com/blog/mastering-waits-and-timeouts-in-playwright
+[author]: https://github.com/mwaz
+[gwp-program]: https://circle.ci/3ahQxfu
